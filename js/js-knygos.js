@@ -94,14 +94,14 @@ let bookCatalog =
         console.log(`Knygos pavadinimas: ${book.title}`)
         console.log(`Puslapiai: ${book.pages}`)
         console.log('-----------------------------')
-        
+
     }
 
     function print_catalogue(bookCatalog){
 
         for(let category of bookCatalog){
-            print_book(bookCatalog);
+            print_book(book);
         }
     }
 
-    print_book(bookCatalog);
+    print_catalogue(bookCatalog);
