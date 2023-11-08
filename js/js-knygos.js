@@ -80,6 +80,7 @@ let bookCatalog =
                 title: 'Raganius',
                 pages: 320
             }
+            
         ]
     
     }
@@ -146,7 +147,7 @@ function createAccordionCategory(categoryId, books) {
     categoryButton.type = 'button';
     categoryButton.setAttribute('data-bs-toggle', 'collapse');
     categoryButton.setAttribute('data-bs-target', `#collapse-${categoryId}`);
-    categoryButton.textContent = categoryId;
+    categoryButton.textContent = `${categoryId} (${books.length} knygos)`; // Pridedame kiek knygų yra kategorijoje
 
     categoryHeader.appendChild(categoryButton);
     categoryElement.appendChild(categoryHeader);
